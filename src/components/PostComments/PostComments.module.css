@@ -1,47 +1,66 @@
-.post-comments-form-textarea {
-    color: #333;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 24px;
-}
-
 .post-comments {
-    
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 10px;
 }
 
 .post-comment {
-    color: #444;
-    font-size: 12px;
-    line-height: 20px;
-    background-color: #ffff9f;
-    padding: 8px 16px;
-    border-radius: 8px;
-    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #c0dff5;
+    padding: 10px 15px;
+    border-radius: 18px 18px 0 18px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    position: relative;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .post-comment-content {
-    font-style: italic;
+    font-style: normal;
 }
 
 .post-comments-form {
-    margin-top: 16px;
-    text-align: right;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-comments-form-textarea {
     display: block;
     resize: none;
     width: 100%;
-    margin-bottom: 8px;
-    padding: 8px 16px;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    min-height: 60px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.post-comments-form-textarea:focus {
+    border-color: #4dabf7;
 }
 
 .post-comments-form-button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 20px;
     border: none;
-    background-color: #27ae60;
-    color: #eee;
+    background-color: #4dabf7;
+    color: white;
     cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s;
+}
+
+.post-comments-form-button:hover {
+    background-color: #339af0;
 }
